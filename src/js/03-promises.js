@@ -1,3 +1,5 @@
+'use strict';
+
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const formEl = document.querySelector('.form');
@@ -25,8 +27,8 @@ function onButtonClick(event) {
   const step = +event.currentTarget.elements.step.value;
 
   for (let i = 0; i < amount; i++) {
-    const position = i;
-    const delay = del + step * i;
+    let position = i;
+    let delay = del + step * i;
 
     createPromise({ position, delay })
       .then(({ position, delay }) => {
