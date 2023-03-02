@@ -1,0 +1,43 @@
+p {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  width: 110px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto auto 50px;
+  width: 350px;
+}
+button[data-start] {
+  background-color: rgb(124, 216, 123);
+}
+button[data-stop] {
+  background-color: rgb(226, 76, 76);
+}
+button[data-start],
+button[data-stop] {
+  padding: 15px 40px;
+  border-radius: 50px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.color-output {
+  margin: 20px auto auto 100px;
+
+  text-align: center;
+  width: 280px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: rgba(256, 256, 256, 0.4);
+  border-radius: 30px;
+}
