@@ -12,7 +12,7 @@ const options = {
     sessionStorage.setItem('timeSet', JSON.stringify(selectedDates[0]));
   },
 };
-flatpickr('#datetime-picker', options);
+const flatpick = flatpickr('#datetime-picker', options);
 
 const refs = {
   startBtn: document.querySelector('button[data-start]'),
@@ -48,6 +48,7 @@ function stopTimer(intervalID) {
 }
 
 function showTimeLeft() {
+  refs.input.disabled = true;
   refs.startBtn.classList.remove('is-active');
   refs.startBtn.disabled = true;
 
